@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gonzalo Quedena</title>
+    <link rel="stylesheet" href="assets/images/styles/base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-900: #111827;
+        --color-primary-800: #1f2937;
+        --color-primary-700: #4b5563;
+        --color-neutral-50: #f9fafb;
+        --color-neutral-100: #dcdfe5;
+        --color-neutral-200: #cbd5e1;
+        --color-accent-500: #24ff6d;
+        --color-accent-600: #22e064;
+      }
+    </style>
+
+    <style>
+      #typewriter-cursor {
+        animation: blink 0.75s step-end infinite;
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          visibility: hidden;
+        }
+        50% {
+          visibility: visible;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-primary-900 text-neutral-50 h-screen overflow-hidden">
+    <div class="h-full flex flex-col px-[20px] pt-[20px] lg:pt-[40px] pb-4 gap-4">
+      <header
+        class="bg-primary-800 rounded-lg opacity-85 shadow-lg p-4 md:p-6 lg:p-8 shrink-0"
+      >
+        <nav class="flex items-center justify-between p-4">
+          <div class="text-neutral-50 text-2xl font-bold">GQ</div>
+          <button class="text-neutral-50">
+            <img
+              src="assets/images/svg/burguer.svg"
+              alt="Menu"
+              class="h-6 w-6"
+            />
+          </button>
+        </nav>
+      </header>
+
+      <main class="flex-1 flex items-center justify-center w-full min-h-0">
+        <section
+          id="home"
+          class="flex flex-col items-center justify-center px-[20px] gap-3 md:gap-4 lg:gap-5 w-full"
+        >
+          <span
+            class="text-neutral-200 text-[16px] font-medium md:text-[20px] lg:text-[24px]"
+            >Hi! I'm</span
+          >
+          <h1
+            class="text-[44px] max-w-[250px] text-center font-medium leading-[50px] md:text-[60px] md:max-w-none md:leading-tight lg:text-[80px]"
+          >
+            <span id="typewriter-text"></span>
+            <span id="typewriter-cursor"></span>
+          </h1>
+          <p
+            class="text-neutral-200 text-[24px] font-medium md:text-[32px] lg:text-[40px]"
+          >
+            Software Engineer
+          </p>
+          <a
+            class="bg-accent-500 text-primary-900 px-4 py-2 rounded-lg my-3 cursor-pointer hover:bg-accent-600 transition-all duration-300 shadow-lg md:px-6 md:py-3 lg:px-8 lg:py-4"
+          >
+            <span class="text-[16px] font-medium md:text-[20px] lg:text-[24px]"
+              >View Works</span
+            >
+          </a>
+          <p
+            class="text-neutral-200 text-[16px] font-light text-center md:text-[20px] lg:text-[24px]"
+          >
+            I build web apps with clean architecture
+          </p>
+          <div
+            class="bg-primary-800 rounded-lg py-4 px-10 opacity-85 shadow-2xl my-3"
+          >
+            <div class="flex items-center justify-between gap-10">
+              <div class="flex items-center justify-center">
+                <a href="https://github.com/GonzaloQu3dena" target="_blank">
+                  <img
+                    src="assets/images/svg/github.svg"
+                    alt="GitHub"
+                    class="h-7 w-7 md:h-9 md:w-9 lg:h-12 lg:w-12"
+                  />
+                </a>
+              </div>
+              <div class="flex items-center justify-center">
+                <a
+                  href="https://www.linkedin.com/in/gonzalo-quedena-b75132345/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/svg/linkedin.svg"
+                    alt="LinkedIn"
+                    class="h-7 w-7 md:h-9 md:w-9 lg:h-12 lg:w-12"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/typing.js"></script>
+  </body>
+</html>
