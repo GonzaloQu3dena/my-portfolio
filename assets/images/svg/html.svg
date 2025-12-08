@@ -1,20 +1,13 @@
-<svg width="54" height="58" viewBox="0 0 54 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_106_997)">
-<path d="M4 0L8.18655 44.9866L26.9721 50L45.8101 44.9682L50 0H4ZM41.3026 10.3066L39.909 25.2931L39.9131 25.374L39.9073 25.5601V25.5585L38.9172 36.0373L38.8081 36.9683L27 40.0943L26.9908 40.1023L15.2031 36.9587L14.405 28.2952H20.1854L20.5955 32.7005L27.0017 34.3623L27 34.3655V34.3647L33.4299 32.6794L34.1094 25.5055H20.6679L20.5526 24.2928L20.2899 21.4517L20.152 19.9262H34.6203L35.1466 14.3469H13.1101L12.9947 13.1349L12.7324 10.2931L12.5942 8.76752H41.4404L41.3026 10.3066Z" fill="url(#paint0_linear_106_997)"/>
-</g>
-<defs>
-<filter id="filter0_d_106_997" x="0" y="0" width="54" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_997"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_997" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_106_997" x1="4" y1="-44.444" x2="98.1168" y2="42.1429" gradientUnits="userSpaceOnUse">
-<stop offset="1" stop-color="#CBD5E1"/>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+  <defs>
+    <mask id="html-mask">
+      <rect width="100%" height="100%" fill="white"/>
+      <path fill="black" d="M22.383 18.4h27.71v11.036H34.488L35.51 40.74h14.584v11.01H25.397zm3.5 38.893h11.084l.778 8.823 12.348 3.306v11.521l-22.654-6.32"/>
+      <path fill="black" d="M77.706 18.4H50.044v11.036h26.64zm-2.018 22.34H50.044v11.035h13.612l-1.288 14.341-12.324 3.306v11.473l22.606-6.271"/>
+    </mask>
+  </defs>
+  <g mask="url(#html-mask)">
+    <path fill="#E44D26" d="M14.021 90.034 6 0h88.187l-8.022 89.985L50.02 100"/>
+    <path fill="#F16529" d="M50.093 92.344V7.39h36.048l-6.88 76.811"/>
+  </g>
 </svg>
