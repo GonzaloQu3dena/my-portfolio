@@ -191,7 +191,7 @@
       </header>
 
       <!--Main Content-->
-      <main class="flex flex-col w-full">
+      <main class="flex flex-col w-full gap-4">
         <!--Home Section-->
         <section id="home" class="scroll-mt-40">
           <div
@@ -268,11 +268,11 @@
               ></span>
             </div>
             <p class="text-[16px] lg:text-[20px]">
-              A few projects that represent what I like to build
+              A few projects that represent what I like to build.
             </p>
             <!--Cards Container-->
             <div
-              class="flex flex-col flex-wrap lg:flex-row items-center justify-center h-full gap-6 lg:gap-10 mt-4"
+              class="flex flex-wrap items-center justify-center h-full gap-6 lg:gap-10 mt-4"
             >
               <!--Card for the [#1 - Project Name]-->
               <div
@@ -691,12 +691,13 @@
             </div>
           </div>
         </section>
+
         <!--Tech Stack Section-->
         <section
           id="tech-stack"
-          class="scroll-mt-40 flex flex-col w-full snap-start lg:min-h-screen justify-center"
+          class="scroll-mt-40 flex flex-col w-full snap-start justify-center"
         >
-          <div class="flex flex-col px-[20px] py-16 gap-10 w-full">
+          <div class="flex flex-col px-[20px] py-24 gap-6 w-full">
             <div class="flex flex-col gap-3">
               <div class="flex flex-col w-fit gap-1">
                 <h2 class="text-[24px] font-bold md:text-[32px] lg:text-[40px]">
@@ -714,7 +715,7 @@
 
             <!--Technology carousel-->
             <div
-              class="relative flex flex-col gap-8 overflow-hidden py-10 bg-primary-800/50 -mx-[20px] px-[20px] md:mx-0 md:rounded-xl"
+              class="relative flex flex-col gap-16 overflow-hidden py-12 bg-primary-800/50 px-[20px] md:mx-0 md:rounded-xl"
             >
               <!-- Row 1: Left to Right-->
               <div
@@ -944,7 +945,6 @@
                 />
               </div>
 
-
               <!-- Side gradients-->
               <div
                 class="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-primary-900 to-transparent z-10"
@@ -952,6 +952,237 @@
               <div
                 class="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-primary-900 to-transparent z-10"
               ></div>
+            </div>
+          </div>
+        </section>
+
+        <!--How I Work Section-->
+        <section
+          id="how-i-work"
+          class="scroll-mt-40 flex flex-col w-full snap-start justify-center"
+        >
+          <div class="flex flex-col px-[20px] py-24 gap-6 w-full">
+            <div class="flex flex-col gap-3">
+              <div class="flex flex-col w-fit gap-1">
+                <h2 class="text-[24px] font-bold md:text-[32px] lg:text-[40px]">
+                  How I Work
+                </h2>
+                <span
+                  class="block w-[85%] h-[2px] bg-accent-500 rounded-full"
+                ></span>
+              </div>
+              <p class="text-[16px] lg:text-[20px] text-justify">
+                A mix of clean architecture, real-world constraints and clear
+                communication.
+              </p>
+            </div>
+            <!--Workboxes Container-->
+            <div
+              class="flex flex-wrap items-center justify-center h-full gap-6 lg:gap-10 mt-4"
+            >
+              <!--Workbox 1-->
+              <div
+                class="flex flex-col gap-4 max-w-[400px] py-[15px] px-[20px] bg-primary-800 opacity-85 rounded-[8px] shadow-lg"
+              >
+                <div
+                  class="flex flex-row items-center justify-between gap-4 bg-primary-700 rounded-[8px] shadow-lg py-[10px] px-[15px]"
+                >
+                  <img
+                    src="assets/images/svg/architecture.svg"
+                    alt="Architecture"
+                    class="w-10 h-10"
+                  />
+                  <span
+                    class="text-[16px] font-extrabold text-center block w-full"
+                    >Architecture & Code Quality</span
+                  >
+                </div>
+                <p class="text-[16px] lg:text-[20px] text-justify">
+                  I structure apps with clean architecture, separation of
+                  concerns and reusable components. I care about readability,
+                  naming and keeping the codebase easy to extend.
+                </p>
+              </div>
+              <!--Workbox 2-->
+              <div
+                class="flex flex-col gap-4 max-w-[400px] py-[15px] px-[20px] bg-primary-800 opacity-85 rounded-[8px] shadow-lg"
+              >
+                <div
+                  class="flex flex-row items-center justify-between gap-4 bg-primary-700 rounded-[8px] shadow-lg py-[10px] px-[15px]"
+                >
+                  <img
+                    src="assets/images/svg/design.svg"
+                    alt="Design"
+                    class="w-10 h-10"
+                  />
+                  <span
+                    class="text-[16px] font-extrabold text-center block w-full"
+                    >Product & UX Focus</span
+                  >
+                </div>
+                <p class="text-[16px] lg:text-[20px] text-justify">
+                  Before jumping into code, I think about the user journey, edge
+                  cases and constraints. I use Figma and quick prototypes to
+                  validate layout, flows and interactions.
+                </p>
+              </div>
+              <!--Workbox 3-->
+              <div
+                class="flex flex-col gap-4 max-w-[400px] py-[15px] px-[20px] bg-primary-800 opacity-85 rounded-[8px] shadow-lg"
+              >
+                <div
+                  class="flex flex-row items-center justify-between gap-4 bg-primary-700 rounded-[8px] shadow-lg py-[10px] px-[15px]"
+                >
+                  <img
+                    src="assets/images/svg/collaboration.svg"
+                    alt="Design"
+                    class="w-10 h-10"
+                  />
+                  <span
+                    class="text-[16px] font-extrabold text-center block w-full"
+                    >Collaboration & Process</span
+                  >
+                </div>
+                <p class="text-[16px] lg:text-[20px] text-justify">
+                  I’m used to Scrum, Git Flow and documenting decisions clearly.
+                  I write tickets, acceptance criteria and commit messages that
+                  make teamwork smoother.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--About Me Section-->
+        <section
+          id="about"
+          class="scroll-mt-40 flex flex-col gap-10 lg:gap-0 w-full snap-start lg:min-h-screen"
+        >
+          <!--About Me Title-->
+          <div class="flex flex-col px-[20px] pt-24 gap-3 w-full">
+            <div class="flex flex-col w-fit gap-1">
+              <h2 class="text-[24px] font-bold md:text-[32px] lg:text-[40px]">
+                About Me
+              </h2>
+              <span
+                class="block w-[85%] h-[2px] bg-accent-500 rounded-full"
+              ></span>
+            </div>
+            <p class="text-[16px] lg:text-[20px] text-justify">
+              5th-year Software Engineering student focused on clean web
+              applications.
+            </p>
+          </div>
+          <!--About Me Card-->
+          <div class="w-full flex flex-col lg:flex-row-reverse gap-15 lg:p-20">
+            <!--About Me Image-->
+            <div class="flex justify-center items-center w-full lg:w-[40%]">
+              <img
+                src="assets/images/webp/me.webp"
+                alt="Profile"
+                class="size-[280px] md:size-[320px] lg:size-[360px] object-cover"
+              />
+            </div>
+            <!--About Me Content-->
+            <div
+              class="flex flex-col gap-8 w-full lg:w-[60%] bg-primary-800 opacity-85 p-10 rounded-[8px] shadow-lg"
+            >
+              <div class="flex flex-col w-fit gap-3">
+                <div class="flex flex-col w-fit gap-1">
+                  <h2
+                    class="text-[16px] font-bold md:text-[20px] lg:text-[24px]"
+                  >
+                    Summary
+                  </h2>
+                  <span
+                    class="block w-[90%] h-[2px] bg-accent-500 rounded-full"
+                  ></span>
+                </div>
+                <p
+                  class="text-[16px] lg:text-[20px] text-justify text-neutral-50"
+                >
+                  I’m a 5th-year Software Engineering student at UPC and a
+                  full-stack developer in training. I build web and mobile
+                  applications with clean architecture, DDD and agile practices.
+                  I work mainly with Java, C#, JavaScript and frameworks such as
+                  Spring Boot, .NET, Angular, Vue and React. I enjoy creating
+                  scalable solutions and I’m committed to continuous learning.
+                </p>
+              </div>
+              <!--Education Section-->
+              <div class="flex flex-col w-fit gap-3 w-full">
+                <div class="flex flex-col w-fit gap-1">
+                  <h2
+                    class="text-[16px] font-bold md:text-[20px] lg:text-[24px]"
+                  >
+                    Education
+                  </h2>
+                  <span
+                    class="block w-[90%] h-[2px] bg-accent-500 rounded-full"
+                  ></span>
+                </div>
+                <p
+                  class="text-[16px] lg:text-[20px] bg-primary-700 text-center p-3 rounded-[8px]"
+                >
+                  <span class="font-bold">Software Engineering</span> <br />
+                  Universidad Peruana de Ciencias Aplicadas (2020 - 2026)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Contact Me Section-->
+        <section
+          id="contact"
+          class="scroll-mt-40 flex flex-col gap-15 w-full snap-start lg:min-h-screen"
+        >
+          <!--Contact Me Title-->
+          <div class="flex flex-col px-[20px] pt-24 gap-3 w-full">
+            <div class="flex flex-col w-fit gap-1">
+              <h2 class="text-[24px] font-bold md:text-[32px] lg:text-[40px]">
+                Contact Me
+              </h2>
+              <span
+                class="block w-[85%] h-[2px] bg-accent-500 rounded-full"
+              ></span>
+            </div>
+            <p class="text-[16px] lg:text-[20px] text-justify">
+              Happy to connect about opportunities or ideas.
+            </p>
+          </div>
+
+          <div class="w-full flex justify-center items-center">
+            <div
+              class="max-w-[90%] lg:max-w-[60%] flex flex-col gap-6 items-center bg-primary-800 opacity-85 px-10 py-15 rounded-[8px] shadow-lg"
+            >
+              <img
+                src="assets/images/svg/whatsapp.svg"
+                alt="WhatsApp"
+                class="w-10 h-10"
+              />
+              <h2 class="text-[16px] font-bold md:text-[20px] lg:text-[24px]">
+                Let’s build something together
+              </h2>
+              <p class="font-light text-[16px] lg:text-[20px] text-center">
+                If you’d like to talk about a project, internship or
+                <br class="hidden lg:block" />
+                collaboration, you can reach me directly on WhatsApp.
+              </p>
+              <a
+                href="https://wa.link/if247t"
+                target="_blank"
+                class="bg-accent-500 text-primary-900 px-[20px] py-[10px] rounded-[8px] mt-2"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="font-bold">Chat on WhatsApp</span>
+                  <img
+                    src="assets/images/svg/into.svg"
+                    alt="Into"
+                    class="w-6 h-6"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </section>
