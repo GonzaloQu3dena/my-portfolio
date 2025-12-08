@@ -38,23 +38,165 @@
   </head>
 
   <body class="bg-primary-900 text-neutral-50 h-screen overflow-hidden">
-    <div class="h-full flex flex-col px-[20px] pt-[20px] lg:pt-[40px] pb-4 gap-4">
+    <div
+      class="h-full flex flex-col px-[20px] pt-[20px] lg:pt-[40px] pb-4 gap-4"
+    >
       <header
         class="bg-primary-800 rounded-lg opacity-85 shadow-lg p-4 md:p-6 lg:p-8 shrink-0"
       >
-        <nav class="flex items-center justify-between p-4">
+        <nav class="flex items-center justify-between p-4 relative">
           <div class="text-neutral-50 text-2xl font-bold">GQ</div>
-          <button class="text-neutral-50">
+
+          <!--Menu Toggle-->
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+          <label
+            for="menu-toggle"
+            class="text-neutral-50 lg:hidden cursor-pointer"
+          >
             <img
               src="assets/images/svg/burguer.svg"
               alt="Menu"
               class="h-6 w-6"
             />
-          </button>
+          </label>
+
+          <label
+            for="menu-toggle"
+            class="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible lg:hidden will-change-opacity"
+          ></label>
+
+          <div
+            class="fixed top-0 right-0 h-screen w-64 bg-primary-800 shadow-2xl z-50 transform transition-transform duration-300 translate-x-full peer-checked:translate-x-0 lg:hidden flex flex-col p-6 border-l border-primary-700 will-change-transform"
+          >
+            <div class="flex justify-end mb-8">
+              <label
+                for="menu-toggle"
+                class="cursor-pointer text-neutral-50 hover:text-accent-500 transition-colors"
+              >
+                <img
+                  src="assets/images/svg/close.svg"
+                  alt="Close"
+                  class="h-6 w-6"
+                />
+              </label>
+            </div>
+
+            <ul class="flex flex-col gap-10">
+              <li>
+                <a href="#home" class="block">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/svg/home.svg"
+                      alt="Home"
+                      class="h-8 w-8"
+                    />
+                    <span class="text-[16px] font-medium">Home</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#about" class="block">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/svg/about.svg"
+                      alt="About"
+                      class="h-8 w-8"
+                    />
+                    <span class="text-[16px] font-medium">About</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" class="block">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/svg/portfolio.svg"
+                      alt="Portfolio"
+                      class="h-8 w-8"
+                    />
+                    <span class="text-[16px] font-medium">Portfolio</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="block">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="assets/images/svg/contact.svg"
+                      alt="Contact"
+                      class="h-8 w-8"
+                    />
+                    <span class="text-[16px] font-medium">Contact</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Menú Desktop -->
+          <div class="hidden lg:block">
+            <ul
+              class="flex items-center gap-8 [&_a]:transition-colors [&_a]:duration-300 [&_a:hover]:text-accent-500"
+            >
+              <li>
+                <a href="#home">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="assets/images/svg/home.svg"
+                      alt="Home"
+                      class="h-6 w-6"
+                    />
+                    <span class="text-[16px] font-medium">Home</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="assets/images/svg/about.svg"
+                      alt="About"
+                      class="h-6 w-6"
+                    />
+                    <span class="text-[16px] font-medium">About</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="assets/images/svg/portfolio.svg"
+                      alt="Portfolio"
+                      class="h-6 w-6"
+                    />
+                    <span class="text-[16px] font-medium">Portfolio</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="assets/images/svg/contact.svg"
+                      alt="Contact"
+                      class="h-6 w-6"
+                    />
+                    <span class="text-[16px] font-medium">Contact</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
-      <main class="flex-1 flex items-center justify-center w-full min-h-0">
+      <!--Main Content-->
+      <main
+        class="flex-1 flex flex-col items-center justify-center w-full min-h-0"
+      >
+        <!--Home Section-->
         <section
           id="home"
           class="flex flex-col items-center justify-center px-[20px] gap-3 md:gap-4 lg:gap-5 w-full"
@@ -116,6 +258,3 @@
         </section>
       </main>
     </div>
-    <script src="assets/js/typing.js"></script>
-  </body>
-</html>
