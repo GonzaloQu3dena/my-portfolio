@@ -55,3 +55,14 @@ my-portfolio/
 ├── index.html            # Main landing page
 └── README.md             # Project documentation
 ```
+
+## Collaboration
+<p align="justify">
+This project is open for collaboration! If you spot any areas for improvement, whether in code optimization, accessibility, or design, feel free to contribute.
+</p>
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-improvement`).
+3. Commit your changes (`git commit -m 'docs: add some improvement'`).
+4. Push to the branch (`git push origin feature/your-improvement`).
+5. Open a Pull Request.
