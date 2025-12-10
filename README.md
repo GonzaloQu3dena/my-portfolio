@@ -1,10 +1,17 @@
 # Gonzalo Quedena's Personal Portfolio
 
 ## Summary
+<p align="justify">
 This is Gonzalo Quedena's personal portfolio website, showcasing his skills as a Software Engineer. Designed with a modern, responsive user interface, it features dynamic elements and clean aesthetics.
+</p>
 
 ## Design Process
-To understand the structural approach and design thinking behind this portfolio, please refer to the [**Design Process Documentation**](docs/DESIGN_PROCESS.md).
+<p align="justify">
+To understand the structural approach and design thinking behind this portfolio, please refer to the: 
+</p>
+<a href="docs/DESIGN_PROCESS.md">
+    <img src="https://img.shields.io/badge/View_Design_Process-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="View Design Process" />
+</a>
 
 ## Features
 - **Responsive Design**: Optimized for seamless viewing across mobile, tablet, and desktop devices.
