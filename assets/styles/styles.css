@@ -1,10 +1,81 @@
+/*
+ * Google Fonts Import
+ * Font Family: Inter
+ * Weights: 100 to 900
+ * Usage: Global font for the application
+ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/*
+ * Global Styles
+ * Sets the default font family for the entire document
+ */
 body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Scroll Animation Classes */
+/*
+ * Typewriter Effect Cursor Animation
+ * Used in: Home Section (#home)
+ * Element: #typewriter-cursor
+ * Description: Creates a blinking cursor effect for the typewriter animation
+ */
+#typewriter-cursor {
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+}
+
+/*
+ * Tech Stack Infinite Scroll Animation
+ * Used in: Tech Stack Section (#tech-stack)
+ * Elements: .animate-scroll-left, .animate-scroll-right
+ * Description: Creates a continuous scrolling carousel effect for technology icons
+ * Note: Uses translateX to move the container. The container must have duplicated content for seamless looping.
+ */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+  width: max-content;
+}
+
+/*
+ * Scroll Reveal Animation (Fade In)
+ * Used in: All major sections (Portfolio, About, etc.)
+ * Class: .fade-in-section
+ * Description: Initial state for elements that should fade in when scrolled into view.
+ * Toggled by: Intersection Observer in scroll-animation.js
+ */
 .fade-in-section {
   opacity: 0;
   transform: translateY(30px);
@@ -12,11 +83,19 @@ body {
   will-change: opacity, transform;
 }
 
+/*
+ * Visible state for Scroll Reveal
+ * Added when element enters viewport
+ */
 .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/*
+ * Accessibility: Reduced Motion
+ * Disables transitions for users who prefer reduced motion
+ */
 @media (prefers-reduced-motion: reduce) {
   .fade-in-section {
     transition: none;
